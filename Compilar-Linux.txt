@@ -1,0 +1,26 @@
+Para compilar el programa en Linux necesitas el compilador de C++ de GNU y la 
+biblioteca Qt4. Desde Ubuntu puedes escribir en consola:
+
+    [sudo] apt-get install g++ libqt4-dev
+
+Otra opción es instalar Qt Creator completamente, buscándolo en el Centro de
+software o desde consola:
+
+    [sudo] apt-get install g++ qtcreator
+
+Una vez instalado, nos ubicamos en la carpeta <bezier>, que contiene el archivo
+<bezier.pro>, y escribimos:
+
+    qmake
+    make
+
+Una vez compilado, tendremos el archivo ejecutable <bezier>. 
+
+(Opcional) Para limpiar la carpeta, podemos ejecutar:
+
+    - make clean # Borra los archivos intermedios (objetos y metaobjetos de Qt)
+    - make distclean # Borra lo anterior y el ejecutable.
+
+Víctor M. Fernández Castro
+vmfdez90@gmail.com
+
